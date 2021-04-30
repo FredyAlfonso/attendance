@@ -48,9 +48,8 @@ if(!isset($_GET['id'])){//revisamos que se haya pasado el parámetro (id)
             <input required type="text" class="form-control" value="<?php echo $attendee['contactnumber']; ?>" id="phone" name="phone" aria-describedby="emailHelp">
             <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
         </div>
-        <div class="d-grid gap-2">
-        <button type="submit" name="submit" class="btn btn-primary">Save Changes</button>
-        </div>
+        <a href="viewrecords.php" class="btn btn-default">Back to list</a>
+        <button type="submit" name="submit" class="btn btn-success">Save Changes</button>
     </form>
 <?php } ?>
 <!--ENd content of the index page -->
